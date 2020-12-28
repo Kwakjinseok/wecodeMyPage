@@ -1,0 +1,211 @@
+/* 로고 네비 */
+body{
+    font-family: 'Krona One', sans-serif;
+    margin: 0;
+}
+
+header{
+    font-family: 'Krona One', sans-serif;
+    display: flex; 
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.head{
+    display: flex; 
+    align-items: center;
+    margin-left:20px;
+}
+
+#logotex{
+    font-size: 40px;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+
+}
+/* 
+#navul{
+    position: fixed;
+    left: 1200px;
+    margin-left: 1000px;
+} */
+
+.nav{
+    padding-right: 30px;
+    list-style: none;
+    border-left: 2px solid black;
+    margin-right: 30px;
+    transform-origin: right bottom;
+    transition: all 1s;
+}
+
+a:active, a:link, a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.nav>a:hover{
+    color: blanchedalmond;
+    transition: all 1s;
+}
+
+.nav:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+@media screen and (max-width:950px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;    
+    }
+
+    ul{
+        flex-direction: column;}
+
+    .nav{
+        padding-left: 15px;
+        margin-left: 10px;
+        transform-origin: left; 
+    }
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.content{
+    height: 800px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 1px dotted black; */
+    flex-wrap: wrap;
+}
+
+#aboutme{
+    width: 470px;
+    height: 588px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 3px solid black;
+    border-radius: 10%;
+    transition: all 1s;
+    background-color: blanchedalmond;
+    
+}
+
+#aboutme:hover{
+    background-color: blanchedalmond;
+    width: 940px;
+    transition: all 1s;
+}
+
+#mainpic{
+    width: 440px; border: 0px solid black;
+    height: 588px;
+    border-radius: 10%;
+    position: relative;
+    z-index: 1;
+    transition: all 1s;
+    
+}
+
+/* #mainpic:hover{
+    width: 420px;
+    transition: all 1s;
+} */
+
+.arul{
+    margin-left: -430px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#portfolio{
+    width: 470px;
+    height: 588px;
+    background-color: bisque;
+    background-image: url('portfolid.png');
+    background-size: 470px;
+    background-repeat: no-repeat;
+    border-right: 3px solid black;
+    border-radius: 10%;
+    display: flex;
+    flex-shrink: 100%;
+    background-position: center;
+    transition: all 1s;
+    font-size: 30px;
+    justify-content: center;
+}
+
+#portfolio:hover{
+    background-image: url('여백의미.png');
+    background-color: bisque;
+    width: 640px;
+    transition: all 1s;
+
+}
+
+#gallery{
+    width: 470px;
+    height: 588px;
+    background-color: burlywood;
+    background-image: url('portfolid.png');
+    background-size: 470px;
+    background-repeat: no-repeat;
+    border-right: 3px solid black;
+    border-radius: 10%;
+    display: flex;
+    background-position: center;
+    transition: all 1s;
+    font-size: 30px;
+    justify-content: center;
+    
+}
+
+#gallery:hover {
+    background-image: url('여백의미.png');
+    background-color: burlywood;
+    width: 640px;
+    transition: all 1s;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
